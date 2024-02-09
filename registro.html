@@ -6,57 +6,92 @@
   <title>Registro</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
+  <header>
+    <nav>
+      <ul>
+  <li><a target="_blank" href="index.html"><img src="imagenes/WildGuard.png"   alt="Index.html"  style="width:100px;height:100px" ></a></li>
+  <li><a href="#">Contacto</a></li>
+  <li><a href="#">Quienes somos</a></l>
+  <li><a href="#">Donaciones</a></li>
+  </ul>
+  </nav>
+  </header>
+    <div>
+    <video loop="true" id="video" autoplay muted style="width:1000px;">
+        <source src="videos/aves.mp4" type="video/mp4">
+     </div>
+</video>
     <div class="registro">
-        <form action="" class="form">
+        <form action="" class="formulario">
           <h2 class="title">Registrarse</h2>
-          <span>Email</span>
-          <div class="contenedor1">
-            <input type="text" class="input" >
-            <label for="" class="label"></label>
-          </div>
           <span>Nombre</span>
           <div class="contenedor1">
-            <input type="text" class="input" >
+            <input type="text" class="input" required >
             <label for="" class="label"></label>
           </div>
-          <span>Contraseña</span>
+          <span>Apellido</span>
           <div class="contenedor1">
-            <input type="text" class="input" >
+            <input type="text" class="input" required>
             <label for="" class="label"></label>
-          </div>
-          <span>Confirmar contraseña</span>
-          <div class="contenedor1">
-            <input type="text" class="input" >
-            <label for="" class="label"> </label>
           </div>
           <span>DNI</span>
           <div class="contenedor1">
-            <input type="text" class="input" >
+            <input type="text" class="input" required>
             <label for="" class="label"></label>
+          </div>
+          <span>Correo electrónico</span>
+          <div class="contenedor1">
+            <input type="text" class="input" required>
+            <label for="" class="label"> </label>
           </div>
           <span>Estado civil</span>
           <div class="contenedor1">
-            <input type="text" class="input" >
+            <select name="" class="input" required>
+                <option>Soltero/a</option>
+                
+                <option>Casado/a</option>
+                
+                <option>Divorciado/a</option>
+                
+                </select>
+            <label for="" class="label"></label>            
+          </div>
+          <span>Teléfono</span>
+          <div class="contenedor1">
+            <input type="text" class="input" required>
             <label for="" class="label"></label>
           </div>
           <span>Disponibilidad</span>
           <div class="contenedor1">
-            <input type="text" class="input" >
+            <input type="text" class="input" required>
             <label for="" class="label"></label>
           </div>
           <span>Motivacion</span>
           <div class="contenedor1">
-            <input type="text" class="input" >
-            <label for="" class="label" placeholder="Motivación"></label>
-          </div>
+            <textarea name="area" class="input" rows="7" cols="20" placeholder="Participar en actividades,preparar actividades..." required></textarea>
+          </div><br><br>
           <span>Observaciones</span>
           <div class="contenedor1">
-            <textarea name="area" rows="7" cols="20" placeholder="Observaciones"></textarea>
+            <textarea name="area" class="input2" rows="7" cols="20" placeholder="Observaciones" required></textarea>
           </div>
+          <br><br><br><br><br><br>
+
+          <div id="contenedor1">
+          <input type="radio" name="politicas" value="1" required> Acepto las políticas de la asociación<br><br>
+          <input type="radio" name="politicas" value="2" required> No acepto las políticas de la asociación<br>
+        </div>
           <input type="submit" id="enviar"value="Enviar" ><br>
     <input type="reset"id="enviar" value="Borrar" >
         </form>
       </div>
 </body>
+<div>
+<footer class="pie">
+  <p>Autor de esta página: Alejandro Franco Yuste <br>    
+    Correo de contacto:
+    <a href="afrancoyuste@gmail.com">afrancoyuste@gmail.com</a></p>
+</footer>
+</div>
 </html>
