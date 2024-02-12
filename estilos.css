@@ -43,6 +43,7 @@ p{
     height: 100px;
     width: 100px;
     justify-content: space-between;
+    border-radius: 50%;
 }
 .navegacion ul{
     margin: 0;
