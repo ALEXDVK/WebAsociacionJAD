@@ -7,7 +7,45 @@
     <link rel="Stylesheet" href="estilos.css">
     <script type="Text/javascript" src="java.js"></script>
 </head>
-<body>
-    
+<body class="body2">
+	<header class="header">
+		<div class="container logo-nav-conteiner">
+			<img class="logo" src="imagenes/WildGuard.png">
+			<nav class="navegacion">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+	
+					<li><a href="registro.html">Registro</a></li>           
+	
+					<li><a href="quienes_somos.html">¿Quiénes Somos?</a></li>
+	
+					<li><a href="contacto.html">Contacto</a></li>
+	
+					<li><a href="Donaciones.html">Donaciones</a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<h1>¡Donaciones!</h1>
+			<p>Bienvenidos, esta es nuestra página de donaciones para las personas que quieran ayudar a nuestra asociación.
+				Cualquier ayuda por poco que sea es bienvenida, muchas gracias de antemano.</p>
+				<form id="donationForm">
+					<label for="amount">Cantidad de Donación:</label>
+					<input type="number" id="amount" name="amount">
+					<button type="submit">Donar</button>
+				</form>
+				<div id="donaciónTotal">
+					<h2>Total Donado:</h2>
+					<p id="cantidadtotal">$0</p>
+				</div>
+        </div>
+	</main>
 </body>
+<footer class="footer">
+	<div class="container">
+		<p>Wildguard © 2024. Todos los derechos reservados.</p>
+	</div>
+</footer>
 </html>
