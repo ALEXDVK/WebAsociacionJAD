@@ -1,6 +1,9 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 6px black;
+    font-weight: 700;
+    font-size: 25px;
     font-size: 1.2rem;
     line-height: 1.6em;
     margin:0;
@@ -23,7 +26,7 @@ p{
 .header{
     background-color: grey;
     color: white;
-    padding: 2rem 0;
+    padding:0;
     position: fixed;
     left:0;
     top:0;
@@ -40,8 +43,8 @@ p{
 }
 .logo{
     display: flex;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     justify-content: space-between;
     border-radius: 50%;
 }
@@ -66,7 +69,7 @@ p{
     background-color: grey;
     color: white;
     text-align: center;
-    padding: 4rem 0;
+    padding: 1px;
     margin-top: 6rem;
 }
 .main{
