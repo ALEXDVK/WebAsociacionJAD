@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="imagenes/WildGuard-modified.png">
+  <script src="javascript.js"></script>
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-  <li><a target="_blank"href="index.html" ><img src="imagenes/WildGuard.png" class="imagen1"  alt="Index.html"  style="width:90px;height:90px" ></a></li>
+  <li><a target="_blank"href="index.html" ><img src="imagenes/WildGuard-modified.png" class="imagen1"  alt="Index.html"  style="width:70px;height:70px" ></a></li>
   <li><a href="#" class="li2">Contacto</a></li>
-  <li><a href="#" class="li2">Quienes somos</a></l>
+  <li><a href="#" class="li2">¿Quienes somos?</a></l>
   <li><a href="#" class="li2">Donaciones</a></li>
   </ul>
   </nav>
@@ -38,13 +40,18 @@
           </div>
           <span>DNI</span>
           <div class="contenedor1">
-            <input type="text" class="input" required>
+            <input type="text" maxlength="9" class="input" required>
             <label for="" class="label"></label>
           </div>
           <span>Correo electrónico</span>
           <div class="contenedor1">
-            <input type="text" class="input" required>
+            <input type="email" class="input" required>
             <label for="" class="label"> </label>
+          </div>
+          <span>Contraseña</span><br><br>
+          <div class="contenedor1">
+            <input type="password"  class="input" required>
+            <label for="" class="label"></label>
           </div>
           <span>Estado civil</span>
           <div class="contenedor1">
@@ -60,18 +67,31 @@
           </div>
           <span>Teléfono</span>
           <div class="contenedor1">
-            <input type="text" class="input" required>
+            <input type="tel" maxlength="9" class="input" required>
             <label for="" class="label"></label>
           </div>
-          <span>Disponibilidad</span>
+          <span>Disponibilidad</span><br><br>
           <div class="contenedor1">
-            <input type="text" class="input" required>
-            <label for="" class="label"></label>
+            <span>Días de la semana</span><br>
+            <input type="checkbox" name="Disponibilidad" value="Lunes"> Lunes
+            <input type="checkbox" name="Disponibilidad" value="Martes"> Martes
+            <input type="checkbox" name="Disponibilidad" value="Miércoles"> Miércoles
+            <input type="checkbox" name="Disponibilidad" value="Jueves"> Jueves
+            <input type="checkbox" name="Disponibilidad" value="Viernes"> Viernes
+            <input type="checkbox" name="Disponibilidad" value="Sábado"> Sábado
+            <input type="checkbox" name="Disponibilidad" value="Domingo"> Domingo<br>
+          </div>
+          <span>Horario</span><br>
+          <div class="contenedor1">
+            <br>
+            <input type="checkbox" name="Disponibilidad" value="Lunes">  Mañana (6:00-11:00)
+            <input type="checkbox" name="Disponibilidad" value="Martes"> Tarde (14:00-18:00)
+            <input type="checkbox" name="Disponibilidad" value="Miércoles"> Noche (20:00-23:00)
           </div>
           <span>Motivacion</span>
           <div class="contenedor1">
             <textarea name="area" class="input" rows="7" cols="20" placeholder="Participar en actividades,preparar actividades..." required></textarea>
-          </div><br><br>
+          </div>
           <span>Observaciones</span>
           <div class="contenedor1">
             <textarea name="area" class="input2" rows="7" cols="20" placeholder="Observaciones" required></textarea>
