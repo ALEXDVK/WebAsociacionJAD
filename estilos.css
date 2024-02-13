@@ -7,7 +7,7 @@ body{
     font-size: 1.2rem;
     line-height: 1.6em;
     margin:0;
-    background-image:url(imagenes/fondo2.png);
+    background-image:url(imagenes/fondo_simple3.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -80,16 +80,16 @@ p{
     width: 845px;
 }
 .imagenalex{
-    height: 380px;
-    width: 300px;
+    height: 400px;
+    width: 280px;
 }
 .imagenjair{
     height: 380px;
     width: 300px;
 }
 .imagendaniela{
-    height: 380px;
-    width: 300px;
+    height: 400px;
+    width: 250px;
 }
 form {
     margin-bottom: 20px;
@@ -119,7 +119,7 @@ form {
     font-size: 1.2rem;
     line-height: 1.6em;
     margin:0;
-    background-image:url(imagenes/fondo.png);
+    background-image:url(imagenes/fondo_simple4.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
