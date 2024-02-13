@@ -139,16 +139,4 @@ background-color: #000000;
 color: #fff;
 opacity: 0.8  ;
 }
-#correo{
-display: block; 
-  margin: auto;
-  width: auto;
-  color: #ffffff;
-}
-#correo:hover{
-  border-style:solid ;
-  width: 180px; 
-}
-#viewPassword{
-  cursor:pointer;
-}
+
