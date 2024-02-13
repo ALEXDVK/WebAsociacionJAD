@@ -41,11 +41,11 @@ nav ul li a {
 
 }
 nav ul .li2:hover {
-  background: #2db3f1; 
+  background: #0b0c0c; 
   border-radius: 70px;
   border-style: solid;
   border-color: #ffffff;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .li2{

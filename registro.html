@@ -8,7 +8,6 @@
   <link rel="icon" href="imagenes/WildGuard-modified.png">
   <script src="javascript.js"></script>
 </head>
-
 <body>
   <header>
     <nav>
@@ -19,28 +18,29 @@
   <li><a href="#" class="li2">Donaciones</a></li>
   </ul>
   </nav>
-  </header>
+</header>
+<main>
     <div>
     <video loop="true" id="video" autoplay muted style="width:1000px;">
         <source src="videos/aves.mp4" type="video/mp4">
      </div>
 </video>
     <div class="registro">
-        <form action="" class="formulario">
+        <form action="" class="formulario" id="formulario">
           <h2 class="title">Registrarse</h2>
           <span>Nombre</span>
-          <div class="contenedor1">
-            <input type="text" class="input" required >
-            <label for="" class="label"></label>
+          <div class="contenedor1" >
+            <input type="text" class="input"  name="usuario" id="usuario" >
+            <label for="" class="nombre"></label> 
           </div>
           <span>Apellido</span>
           <div class="contenedor1">
-            <input type="text" class="input" required>
+            <input type="text" class="input" id="apellido">
             <label for="" class="label"></label>
           </div>
           <span>DNI</span>
           <div class="contenedor1">
-            <input type="text" maxlength="9" class="input" required>
+            <input type="text" maxlength="9" class="input" id="DNI">
             <label for="" class="label"></label>
           </div>
           <span>Correo electrónico</span>
@@ -50,12 +50,12 @@
           </div>
           <span>Contraseña</span><br><br>
           <div class="contenedor1">
-            <input type="password"  class="input" required>
+            <input type="password"  class="input" id="contraseña">
             <label for="" class="label"></label>
           </div>
           <span>Estado civil</span>
           <div class="contenedor1">
-            <select name="" class="input" required>
+            <select name="" class="input" >
                 <option>Soltero/a</option>
                 
                 <option>Casado/a</option>
@@ -67,7 +67,7 @@
           </div>
           <span>Teléfono</span>
           <div class="contenedor1">
-            <input type="tel" maxlength="9" class="input" required>
+            <input type="tel" maxlength="9" class="input" id="tel" >
             <label for="" class="label"></label>
           </div>
           <span>Disponibilidad</span><br><br>
@@ -90,22 +90,23 @@
           </div>
           <span>Motivacion</span>
           <div class="contenedor1">
-            <textarea name="area" class="input" rows="7" cols="20" placeholder="Participar en actividades,preparar actividades..." required></textarea>
+            <textarea name="area" class="input" rows="7" cols="20" placeholder="Participar en actividades,preparar actividades..." ></textarea>
           </div>
           <span>Observaciones</span>
           <div class="contenedor1">
-            <textarea name="area" class="input2" rows="7" cols="20" placeholder="Observaciones" required></textarea>
+            <textarea name="area" class="input2" rows="7" cols="20" placeholder="Observaciones" ></textarea>
           </div>
           <br><br><br><br><br><br>
 
           <div id="contenedor1">
-          <input type="radio" name="politicas" value="1" required> Acepto las políticas de la asociación<br><br>
-          <input type="radio" name="politicas" value="2" required> No acepto las políticas de la asociación<br>
+          <input type="radio" name="politicas" value="1" > Acepto las políticas de la asociación<br><br>
+          <input type="radio" name="politicas" value="2" > No acepto las políticas de la asociación<br>
         </div>
           <input type="submit" id="enviar"value="Enviar" ><br>
     <input type="reset"id="enviar" value="Borrar" >
         </form>
       </div>
+    </main>
 </body>
 <div>
 <footer class="pie">
