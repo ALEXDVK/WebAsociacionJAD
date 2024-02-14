@@ -94,38 +94,6 @@ p{
     width: 250px;
     margin-left: 25%;
 }
-form {
-    margin-bottom: 20px;
-  }
-  
-  input {
-    padding: 10px;
-    width: 200px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #donaciónTotal {
-    background-color: black;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-.body2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    line-height: 1.6em;
-    margin:0;
-    background-image:url(imagenes/fondo_simple4.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-}
 h3{
     margin-left: 37%;
 }
@@ -134,5 +102,32 @@ h3{
 }
 .alex{
     margin-left: 30%;
+}
+.body2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    background-image:url(imagenes/fondo_simple4.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.slider{
+    overflow: hidden;
+}
+.slider--inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+    align-items: center;
+}
+.slider--inner img{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+img{
+    width: 260px;
+    height: 300px;
 }
 
