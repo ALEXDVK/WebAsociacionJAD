@@ -246,6 +246,26 @@ body {
     padding: 20px;
 }
 
-.sliderimg img {
-    width: 1500px;
+.slider-box {
+    width: 1200px;
+    height: 800px;
+    margin: 0;
+
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 5s infinite alternate ease-in-out; 
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto-slider {
+    
 }
