@@ -32,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var correo = document.getElementById('correo').value
     var contraseña = document.getElementById('contraseña').value
     var Estado_civil= document.getElementById('Estado_civil').value
-    var disponibilidad= document.getElementById('Disponibilidad').value
-    var motivacion= document.getElementById('M  otivacion').value
+    var motivacion= document.getElementById('Motivacion').value
     var observaciones= document.getElementById('observaciones').value
-    confirm("¿Deseas enviar el formulario con estos datos : \nNombre :" + nombre + "\nApellido:" + apellido+ "\nDNI:" + DNI + "\nContraseña :" + clave + "\nTeléfono :" + telefono 
-    + "\nCorreo :" + correo + "\nContraseña :" + contraseña + "\nEstado civil :" + Estado_civil+ "\nDisponibilidad :" + disponibilidad + "\nMotivación :" + motivacion
-    + "\nObservaciones :" + observaciones);
-    this.submit();
+    var opcion =confirm("¿Deseas enviar el formulario con estos datos : \nNombre :" + nombre + "\nApellido:" + apellido+ "\nDNI:" + DNI + "\nContraseña :" + clave + "\nTeléfono :" + telefono 
+    + "\nCorreo :" + correo + "\nContraseña :" + contraseña + "\nEstado civil :" + Estado_civil + "\nMotivación :" + motivacion
+    +  "\nObservaciones :" + observaciones);
   }
 
+
+  
