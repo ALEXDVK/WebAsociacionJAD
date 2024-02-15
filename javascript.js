@@ -37,6 +37,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var opcion =confirm("¿Deseas enviar el formulario con estos datos : \nNombre :" + nombre + "\nApellido:" + apellido+ "\nDNI:" + DNI + "\nContraseña :" + clave + "\nTeléfono :" + telefono 
     + "\nCorreo :" + correo + "\nContraseña :" + contraseña + "\nEstado civil :" + Estado_civil + "\nMotivación :" + motivacion
     +  "\nObservaciones :" + observaciones);
+
+    if (opcion == true){
+      alert('Registro completado con éxito')
+    }
+    else {
+      alert('El formulario ha sido cancelado')
+    }
   }
 
 

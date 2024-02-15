@@ -133,10 +133,37 @@ nav ul .li2:hover {
   margin-top: 30px;
 }
 footer{
-text-align: center;
-padding: 2px;
-background-color: #000000;
-color: #fff;
-opacity: 0.8  ;
+  text-align: center;
+  padding: 2px;
+  background-color: #000000;
+  color: #fff;
+  opacity: 0.8  ;
+  } 
+
+.correo{
+  background-color: #fff;
 }
 
+@media screen and (max-width: 480px){
+  #encabezado{
+      height: auto;
+  }
+  #contenido{
+      width: auto;
+  }
+  #barra_lateral{
+      display:none;
+  }
+}
+
+@media screen and (max-width: 980px){
+  #contenedor{
+      width: 90%;
+  }
+  #contenido{
+      width: 60%;
+  }
+  #barra_lateral{
+      width:30%;
+  }
+}
