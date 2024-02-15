@@ -1,17 +1,45 @@
-let sliderInner = 
-document.querySelector(".slider--inner");
+const botonizq = document.querySelector(".boton-izq"),
+      botonder = document.querySelector(".boton-der"),
+      slider = document.querySelector("#sliderjava"),
+      sliderSection = document.querySelectorAll(".slider--inner") ;
 
-let images =
-sliderInner.querySelectorAll (".img");
+botonizq.addEventListener("click", e => moverizquierda())
+botonder.addEventListener("click", e => moverderecha())
 
-let index = 1;
+setInterval(() => {
+    moverderecha ()
+},1000);
 
- setInterval(function(){
-    let percentage = index * -100
-    sliderInner.style.transform =
-    "translateX("+ percentage +"%)" ;
-    index++;
-    if(index > (images.length -1)){
-        index = 1;
+let operacion = 0,
+counter = 0,
+withImg = 100 / sliderSection.length;
+
+function moverderecha(){
+    if (counter >= sliderSection.length-1){
+        counter = 0 ;
+        operacion = 0 ;
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition = "none"
+        return;
     }
- }, 5000);
+    counter++;
+    operacion = operacion + withImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
+    
+}
+function moverizquierda(){
+    counter--;
+    if(counter < 0 ) {
+        counter = sliderSection.length-1;
+        operacion = withImg * (sliderSection.length-1)
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition = "none"
+        return;
+    } 
+    operacion = operacion - withImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
+
+}
+
