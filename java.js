@@ -8,7 +8,7 @@ botonder.addEventListener("click", e => moverderecha())
 
 setInterval(() => {
     moverderecha ()
-},1000);
+},100);
 
 let operacion = 0,
 counter = 0,
@@ -28,8 +28,7 @@ function moverderecha(){
     slider.style.transition = "all ease .6s"
     
 }
-function moverizquierda(){
-    counter--;
+function moverizquierda(){ 
     if(counter < 0 ) {
         counter = sliderSection.length-1;
         operacion = withImg * (sliderSection.length-1)
@@ -37,6 +36,7 @@ function moverizquierda(){
         slider.style.transition = "none"
         return;
     } 
+    counter--;
     operacion = operacion - withImg;
     slider.style.transform = `translate(-${operacion}%)`;
     slider.style.transition = "all ease .6s"
