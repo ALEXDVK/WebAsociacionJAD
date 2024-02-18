@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
 }
 
 body {
@@ -23,10 +22,10 @@ body {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)),
         url(images/loro.png);
-    background-position: center bottom;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 100px;
     display: flex;
     align-items: center;
 }
@@ -41,14 +40,16 @@ body {
     justify-content: space-between;
 }
 
-.logo {
-    font-size: 25px;
-    font-weight: 800;
+.logo img {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
 }
 
 .menu .navegador ul li {
     position: relative;
     float: left;
+    list-style: none;
 }
 
 .menu .navegador ul li a {
@@ -72,10 +73,7 @@ body {
     width: 25px;
 }
 
-.menu label {
-    cursor: pointer;
-    display: none;
-}
+
 
 .header-contenido {
     text-align: center;
@@ -107,7 +105,7 @@ body {
     background-color: rgb(231, 135, 135);
 }
 
-.aguila {
+.contactus {
     padding: 100px 0;
     background-color: #e1e2e6;
     position: relative;
@@ -205,17 +203,6 @@ body {
     margin-bottom: 50px;
     width: 100%;
 }
-.servicios1 {
-    padding: 0 100px;
-}
-.servicios1 img {
-    width: 25px;
-    margin-bottom: 15px;
-}
-.servicios1 h3 {
-    font-size: 18px;
-    color: #eaccb3;
-}
 .general {
     display: flex;
 }
@@ -236,20 +223,14 @@ body {
 
 
 /* PAGINA DE INICIO*/
-.contenedorimg {
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    background: #414247;
-    background: linear-gradient(to right,#67686e, #323337);
-    padding: 20px;
-}
+
+/*Slider de imágenes del inicio*/
 
 .slider-box {
-    width: 1200px;
-    height: 800px;
-    margin: 0;
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
 
 }
 
@@ -257,7 +238,7 @@ body {
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 5s infinite alternate ease-in-out; 
+    animation: slide 20s infinite alternate ease-in-out; 
 }
 
 .slider-box li {
@@ -266,6 +247,83 @@ body {
     position: relative;
 }
 
+.slider-box img {
+    width: 100%;
+}
+
 .texto-slider {
-    
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #f9fafc;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100€;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+
+/*---PIE DE PÁGINA---*/
+.piepagina {
+    width: 100%;
+    background-color: #323337;
+    display: flex;
+    position: relative;
+}
+.piepagina .grupo1{
+    display: flex;
+    position: relative;
+    justify-content: space-between;  
+}
+.piepagina .grupo1 .caja .logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.caja {
+    padding: 40px;
+}
+.caja img {
+    width: 150px;
+}
+.caja h2 {
+    color: #FFFDFC;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.caja p {
+    color: #FFFDFC;
+    margin-bottom: 5px;
+}
+.caja .redessociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffff;
+    margin-right: 10px;
+    background-color: #414247;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.redessociales img {
+    width: 25px;
+}
+.piepagina .grupo2 {
+    display: flex;
+    justify-content: center;
 }
