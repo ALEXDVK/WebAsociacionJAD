@@ -12,6 +12,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/*CABECERA Y NAVEGADOR*/
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
@@ -104,7 +105,7 @@ body {
 .boton1:hover {
     background-color: rgb(231, 135, 135);
 }
-
+/*CONTACTA CON NOSOTROS*/
 .contactus {
     padding: 100px 0;
     background-color: #e1e2e6;
@@ -148,7 +149,7 @@ body {
     font-size: 20px;
     margin-bottom: 15px;
 }
-
+/*FORMULARIO DE CONTACTO*/
 .informacion {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -282,8 +283,7 @@ body {
     display: flex;
     position: relative;
 }
-.piepagina .grupo1{
-    display: flex;
+.piepagina .grupo1{  
     position: relative;
     justify-content: space-between;  
 }
@@ -318,12 +318,8 @@ body {
     margin-right: 10px;
     background-color: #414247;
     text-align: center;
-    transition: all 300ms ease;
+
 }
 .redessociales img {
     width: 25px;
-}
-.piepagina .grupo2 {
-    display: flex;
-    justify-content: center;
 }
