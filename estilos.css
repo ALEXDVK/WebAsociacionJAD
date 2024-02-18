@@ -9,28 +9,36 @@
     background-image:url(imagenes/fondo_simple3.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
+    
 }
 h1{
-    font-size: 2rem;
-    line-height: 1.3em;
+    font-size: 3rem;
+    line-height: 1.5em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 p{
     margin-bottom: 1.6em;
 }
-.container{
+.container {
     width: 85%;
-    max-width: 850px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 5px auto; /* Ajustado para centrar el contenedor /
+    / Agregamos padding al contenedor para dar espacio alrededor del texto /
+    padding: 20px;
+    background-color: #f0f0f0; / Solo para visualizar el contenedor */
 }
 .header{
     background-color: #4e6f9a;
     color: white;
-    padding:0;
+    padding: -100px 100px;
     position: fixed;
     left:0;
     top:0;
     right:0;
-    z-index: 100;
+    z-index: 90;
+    height: 80px;
 }
 .header a{
     color: white;
@@ -43,7 +51,7 @@ p{
 }
 .logo{
     display: flex;
-    height: 80px;
+    height: 70px;
     width: 80px;
     justify-content: space-between;
     border-radius: 50%;
@@ -74,7 +82,7 @@ p{
     margin-top: 2rem;
 }
 .main{
-    padding-top: 15rem;
+    padding-top: 9rem;
 }
 .slider{
     width: 100%;
@@ -103,33 +111,43 @@ p{
 
     80%{margin-left: -230%;}
     100%{margin-left: -300%;}
-    
-
-   
 }
 .imagenalex{
     height: 400px;
     width: 280px;
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 .imagenjair{
     height: 380px;
     width: 300px;
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
-.imagendaniela{
+.imagendaniela {
     height: 400px;
     width: 250px;
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 h3{
-    margin-left: 37%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
-.daniela{
-    margin-left: 29%;
+.daniela {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* top: auto; */
 }
 .alex{
-    margin-left: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .body2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -140,11 +158,13 @@ h3{
     background-size: 100% 100%;
     background-attachment: fixed;
 }
-.galeria{
+.galeria {
     display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
     width: 650px;
-    height: 430px;
-  }
+    height: 500px;
+    margin: 0 auto; /* Para centrar el contenedor galería en la página */
+}
   .galeria img{
     width: 0px;
     flex-grow: 1;
