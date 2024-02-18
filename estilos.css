@@ -1,3 +1,129 @@
+
+#nav1{
+  float:left;
+}
+#nav1 ul{
+  list-style: none;
+  overflow: hidden;
+}
+#nav1 ul li{
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  bottom: 20px;
+}
+#nav1 ul li a {
+  display: block; 
+  padding: 15px;
+  margin: auto;
+  color: #fff;
+  text-decoration: none;
+  
+
+}
+#nav1 ul .li2:hover {
+  background: #0b0c0c; 
+  border-radius: 70px;
+  border-style: solid;
+  border-color: #ffffff;
+ 
+}
+
+.li2{
+  margin-top: 25px;
+}
+.imagen999{
+  border-radius: 50%;
+}
+
+#video {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  overflow: hidden;
+  }
+
+.registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+.formulario {
+  background-color: rgb(231, 240, 230);
+  width: 380px;
+  border-radius: 10px;
+  margin: 120px 0px 10px 0px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.contenedor1 {
+  position: relative;
+  height: 70px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(220, 100%, 50%);
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+.input2 {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border: 1px solid hsl(220, 100%, 50%);
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+#enviar {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: hsl(220, 100%, 50%);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+footer{
+  text-align: center;
+  padding: 2px;
+  background-color: #000000;
+  color: #fff;
+  opacity: 0.8  ;
+  } 
+
+.correo{
+  background-color: #fff;
+}
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
@@ -133,3 +259,24 @@ h3{
   }
  
 
+
+#body1{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  font-family: "lato", sans-serif
+}
+
+#header1{
+  display: block;
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  z-index: 100;
+}
