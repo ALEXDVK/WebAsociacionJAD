@@ -384,7 +384,6 @@ h2{
     background-size: 100% 100%;
     background-attachment: fixed;
 }
-<<<<<<< HEAD
 .galeria {
     display: flex;
     justify-content: center; /* Centra horizontalmente los elementos */
@@ -393,14 +392,12 @@ h2{
     margin: 0 auto; /* Para centrar el contenedor galería en la página */
 }
   .galeria img{
-=======
 .galeria{
     display: flex;
     width: 850px;
     height: 430px;
   }
 .galeria img{
->>>>>>> principal
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -409,7 +406,6 @@ h2{
   }
   .galeria img:hover{
     cursor: crosshair;
-<<<<<<< HEAD
     width: 450px;
     opacity: 1;
     filter: contrast(120%);
@@ -635,12 +631,10 @@ h2{
 .redessociales img {
   width: 25px;
 }
-=======
     width: 500px;
     opacity: 1;
     filter: contrast(120%);
   }
->>>>>>> principal
  
 
 
