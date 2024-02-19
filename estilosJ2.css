@@ -16,6 +16,14 @@
     display: flex;
     align-items: center;
 }
+.main{
+    padding-top: 5rem;
+}
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 5px auto; 
+}
 
 .menu {
     position: absolute; 
